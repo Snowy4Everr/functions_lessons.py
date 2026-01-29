@@ -1,3 +1,22 @@
+def tea_order(customer_name, tea_type, *args): #**kwargs    #if using *args and ##kwargs, *args comes first
+    print(customer_name, "ordered a", tea_type, "tea")
+    #for key, value in kwargs.items():
+    #   print("  - Add", key, ":", value)
+    print("args contains:", args)
+    for arg in args:
+        print("   - Add:", arg)
+# for arg in extras:
+#print("   - Add:", arg)
+tea_order("Alice", "chamomile")
+tea_order("Bob", "black", "oat", "honey") #milk="oak"
+tea_order("Tony", "black", "oat", "honey") #milk="oat", sweetener="honey" #positional arguments before keyword arguments (args, kwargs)
+
+#eves_extras = "almond", "sugar", "lemon"
+#tea_order("Eve", "green", milk="almond", sweetemer="sugar", flavor="lemon")
+#tea_order("Eve", "green", **eves_extras)
+
+
+
 # Indefinite Arguments (*args) Practice #1
 # Create a function called sum_squares that takes any number of numeric arguments, and returns the sum of their values squared.
 
