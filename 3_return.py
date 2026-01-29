@@ -1,10 +1,8 @@
 # Return Practice #1
 # Create a function called power that takes two numeric values as arguments. It must return the number that results from solving a power, using the first number as the base, and the second as the exponent
 def power(num1,num2):
-    number = 3
-    power = 2
-    return number + power
-
+    return num1**num2
+print(power(2,3))
 
 
 
@@ -34,4 +32,5 @@ def usd_to_eur(usd):
 
 # Hint: inside the created function, you should use string methods already seen.
 def reverseword(word):
-    reverse=word[::-1]
+    return word[::-1].upper()
+print(reverseword("Python"))
